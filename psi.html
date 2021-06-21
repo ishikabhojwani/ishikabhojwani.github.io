@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Module2 | Placement Stastics</title>
+        <style>
+            .heading{
+                width: 100%;
+                height: 40px;
+                border: thin dotted black;
+                text-align: center;
+                font-family: sans-serif;
+                font-size: 30px;
+                background-color: grey;
+            }
+        </style>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load('current', {'packages':['bar']});
+          google.charts.setOnLoadCallback(drawChart);
+    
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Company', '2019-20 Placed Students', '2020-21 Placed Students'],
+              ['TCS', 11, 12],
+              ['Persistent', 1, 1],
+              ['Capgemini', 8, 17],
+              ['Global Edge',2,0],
+              ['Kanaka Software',1,0],
+              ['Fiserv', 1,0],
+              ['Wipro', 1,0],
+              ['Zensoft',1,0],
+              ['Atos-Syntel',1,0],
+              ['Infosys',6,2],
+              ['Tech Mahindra',2,0],
+              ['SLK Software',1, 1],
+              ['Cognizant',12,0],
+              ['Casepoint',0,2],
+              ['Hexaware',0,1],
+              ['Doshaheen Solutions Pvt.Ltd',0,6]
+            ]);
+    
+            var options = {
+              chart: {
+                title: 'Placement Statistics',
+              },
+              bars: 'horizontal' // Required for Material Bar Charts.
+            };
+    
+            var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+    
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+          }
+        </script>
+         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        </head>
+        <body>
+            <div style="width: 100%;height:150px;background-color: white;">
+                <div style="display: inline-block;width: 21%;height:150px;background-color: #fdfdfd;">
+                <img src="sgu logo.jpg" style="width: 50%;height: 150px;margin-left:83px">
+                </div>
+                
+                <div style="display: inline-block;width: 76%;height:150px;background-color: #f5f4f9;text-align:center;">
+                    <img src="sgu banner1.png" style="width: 100%;height: 150px;text-align: center;">
+                </div>
+                </div><br>
+                <br>
+                <div style="width: 100%;height:70px;background-color:white;">
+                    <h1  style="float: left;"> <i>TRAINING & PLACEMENT</i></h1>
+                    <a href="contact us.html" target="_blank" style="color: #020202;padding: 40px;font-size: x-large;float: right;"> Contact Us </a>
+                    <a href="psi.html" target="_blank" style="color: #020202;padding: 40px;font-size: x-large;float: right;"> Placement Stastic Info </a>
+                            <a href="cstr.html" target="_blank" style="color: #020202;padding: 40px;font-size: x-large;float: right;"> Company Specific Training Report </a>
+                            <a href="MPG5.html" target="_blank" style="color: #020202;padding: 40px;font-size: x-large;float: right;"> Login </a>
+                        
+                </div>
+				<br>
+                <br>
+                <div style="width: 100%;height:42px;background-color: grey;">
+<h1 style="text-align:center;">PLACEMENT STATISTIC INFORMATION</h1>
+</div>
+<br>
+                <div style="width: 100%;height:600px;">
+
+                    <div style="display:inline-block;width:25%;height:600px;font-family: sans-serif;">
+                        <img src="PACKAGES.png" style="float: left;margin-top: 220px;">
+                    </div>
+
+                    <div style="display:inline-block;width:74%;height:600px;">
+                        <div id="barchart_material" style="width: 900px; height: 500px;margin:50px;">
+                        </div>
+                    </div>
+
+                </div><br>
+                <br>
+                <div style="width: 100%;height:50px;background-color: grey;">
+                    <div style="display: inline-block;width: 50%;height:50px;background-color:grey;">
+                    <h2  style="float:left;"> <i>Sanjay Ghodawat University!</i></h2>
+                    </div>
+                <div style="display: inline-block;width: 48%;height:50px;background-color: grey;">
+                            <p class="a" style="text-align: right;float:right;">&nbsp; &nbsp; 
+                            <a href="https://www.facebook.com/SGUniversityKolhapur"><i class="fab fa-facebook" style="font-size:30px;color:black;" aria-hidden="true"></i></a>&nbsp; &nbsp; 
+                            <a href="http://www.sanjayghodawatuniversity.ac.in/#"><i class="fab fa-google" style="font-size:30px;color:black;" aria-hidden="true"></i></a>&nbsp; &nbsp; 
+                            <a href="https://in.linkedin.com/company/sguniversity"><i class="fab fa-linkedin" style="font-size:30px;color:black;" aria-hidden="true"></i></a>&nbsp; &nbsp; 
+                            <a href="https://www.youtube.com/watch?v=dia-Km9XXP4"><i class="fab fa-youtube" style="font-size:30px;color:black;" aria-hidden="true"></i></a>&nbsp; </p>
+                        </div> 
+                
+                
+                </div>
+                
+                </body>
+                </html>

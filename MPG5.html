@@ -1,0 +1,178 @@
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<title>Login</title>
+<style>
+    .loginbox{
+        width: 515px;
+        position:absolute;
+        top:85%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color:rgb(235 215 142 / 52%);
+        border: thin black;
+        font-size: larger;
+        font-family: sans-serif;
+        padding: 5%;   
+        margin: 30px;
+        margin-top: 90;
+    }
+    .loginbox h2{
+        float: left;
+        font-size: 30px;
+        border-bottom: 5px solid;
+        margin-bottom: 50px;
+        padding: 10px;
+        
+    }
+    .textbox{
+        width: 100%;
+        overflow: hidden;
+        font-size: 20px;
+        padding: 8px 0;
+        margin: 8px 0;
+        border-bottom: 1px solid;
+    }
+    .textbox input{
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 18px;
+        width:80%;
+        float:left;
+        margin:0 10px;
+    }
+    .btn{
+        width: 100%;
+        background: none;
+        border: 2px solid;
+        padding: 5px;
+        margin: 12px 0;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .cancelbtn{
+        width: 100%;
+        background: none;
+        border: 2px solid;
+        padding: 5px;
+        margin: 12px 0;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    
+</style>
+</head>
+<body>
+<div style="width: 100%;height:150px;background-color: white;">
+    <div style="display: inline-block;width: 21%;height:150px;background-color: #fdfdfd;">
+    <img src="sgu logo.jpg" style="width: 50%;height: 150px;margin-left:83px">
+    </div>
+    
+    <div style="display: inline-block;width: 76%;height:150px;background-color: #f5f4f9;">
+        <img src="sgu banner1.png" style="width: 100%;height: 150px;text-align: center;">
+               </div>
+      
+        
+    </div>
+    <br>
+    <div style="width: 100%;height:70px;background-color: white;">
+    <h1  style="float: left;"> <i>TRAINING & PLACEMENT</i></h1>
+    <a href="contact us.html" target="_blank" style="color: #020202;padding: 40px;font-size: x-large;float: right;"> Contact Us </a>
+    <a href="PSI.html" target="_blank" style="color: #020202;padding: 40px;font-size: x-large;float: right;"> Placement Stastic Info </a>
+            <a href="CSTR.html" target="_blank" style="color: #020202;padding: 40px;font-size: x-large;float: right;"> Company Specific Training Report </a>
+            <a href="MPG5.html" target="_blank" style="color: #020202;padding: 40px;font-size: x-large;float: right;"> Login </a>
+        
+    </div>
+    <br>
+
+<div style="width:100%; height:870px;">
+
+    <form onsubmit="demo()" method="post">
+             
+        <div class="loginbox">
+            <h2>Login</h2><br>
+    
+
+        <div class="textbox">
+          <input type="text" placeholder="Enter First Name" name="fname" value="" required><br>
+          </div>
+          <br>
+          <div class="textbox">
+          <input type="text" placeholder="Enter Last Name" name="lname" value="" required><br>
+          </div>
+          <br>
+          <div class="textbox">
+          <input type="text" placeholder="Enter Username" name="uname" value="" required><br>
+          </div>
+          <br>
+          <div class="textbox">
+          <input type="password" placeholder="Enter Password" name="pass"  value="" required><br>
+          </div>
+          <br>
+          <div class="textbox">
+          <input type="text" placeholder="Enter Contact Number" name="mobile"  value="" required><br>
+          </div>
+          <br>
+          <input class="btn" type="submit" name="button1" value="Login"></button>
+
+          <input class="cancelbtn" type="reset" name="button2" value="Cancel"></button><br>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label><br>
+            <br>
+
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+      </div>
+
+      <br>
+      <div style="width: 100%;height:50px;background-color: grey;">
+    <div style="display: inline-block;width: 50%;height:50px;background-color:grey;">
+    <h2  style="float:left;"> <b><i>Sanjay Ghodawat University!</b></i></h2>
+    </div>
+<div style="display: inline-block;width: 48%;height:50px;background-color: grey;">
+    <p class="a" style="text-align: right;float:right;">&nbsp; &nbsp; 
+        <a href="https://www.facebook.com/SGUniversityKolhapur"><i class="fab fa-facebook" style="font-size:30px;color:black;" aria-hidden="true"></i></a>&nbsp; &nbsp; 
+        <a href="http://www.sanjayghodawatuniversity.ac.in/#"><i class="fab fa-google" style="font-size:30px;color:black;" aria-hidden="true"></i></a>&nbsp; &nbsp; 
+        <a href="https://in.linkedin.com/company/sguniversity"><i class="fab fa-linkedin" style="font-size:30px;color:black;" aria-hidden="true"></i></a>&nbsp; &nbsp; 
+        <a href="https://www.youtube.com/watch?v=dia-Km9XXP4"><i class="fab fa-youtube" style="font-size:30px;color:black;" aria-hidden="true"></i></a>&nbsp; </p>
+        </div> 
+</div>
+<script>
+    function demo()
+    {
+        document.write("welcome!");
+    if(document.getElementById("fname").value == "")
+    {
+    alert("Field can't be empty!");
+    return false;
+    }
+    else if(document.getElementById("lname").value == "")
+    {
+    alert("Field can't be empty!");
+    return false;
+    }
+    else if(document.getElementById("uname").value == "")
+    {
+    alert("Field can't be empty!");
+    return false;
+    }
+    else if(document.getElementById("pass").value == "")
+    {
+    alert("Field can't be empty!");
+    return false;
+    }
+    else if(document.getElementById("mobile").value == "")
+    {
+    alert("Field can't be empty!");
+    return false;
+    }
+    return true;
+    }
+    </script> 
+    
+</body>
+</html>
